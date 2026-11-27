@@ -13,8 +13,8 @@ A private, voice-enabled diary app. You talk (or type) to an AI companion about 
 ## Features
 
 - **Multimodal emotion recognition**: combines two models into one prediction:
-  - 🗣️ **Tone of voice**: `emotion2vec+` analyzes the audio itself
-  - 📝 **Words**: a fine-tuned DistilRoBERTa model classifies the transcript
+  - **Tone of voice**: `emotion2vec+` analyzes the audio itself
+  - **Words**: a fine-tuned DistilRoBERTa model classifies the transcript
   - Late fusion: **60% voice + 40% text** in speaking mode, text-only in writing mode
 - **7 emotion classes**: happy, sad, angry, fearful, disgusted, surprised, neutral
 - **Speech-to-text** with `faster-whisper`, running on CPU (int8)
@@ -84,7 +84,7 @@ All models are **preloaded in background threads** at startup, and a `/api/statu
 
 ### 2. Install
 ```bash
-git clone https://github.com/<your-username>/multimodal-emotion-recognition.git
+git clone https://github.com/miangocnguyen92/multimodal-emotion-recognition.git
 cd multimodal-emotion-recognition
 
 python -m venv venv
