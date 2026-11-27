@@ -153,4 +153,4 @@ HISTORY_TURNS = 6           # how many past messages the LLM sees
 
 ## Author
 
-**Mia Nguyen**: [GitHub](https://github.com/miangocnguyen92) · [LinkedIn](https://www.linkedin.com/in/mianguyen92/)
+**Mia Nguyen**: [GitHub](https://github.com/miangocnguyen92) · [LinkedIn](https://www.linkedin.com/in/mianguyen92/) · [Portfolio](https://mia-nguyen-portfolio.lovable.app/)
