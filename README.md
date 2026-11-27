@@ -1,15 +1,16 @@
-# 🎙️ Mood Diary: Multimodal Emotion Recognition with a Local LLM Companion
+# Mood Diary: Multimodal Emotion Recognition with a Local LLM Companion
 
 A private, voice-enabled diary app. You talk (or type) to an AI companion about your day, and the app **recognizes your emotions from both your words and your tone of voice**, then tracks how your mood changes over time on an interactive dashboard.
 
 **Everything runs locally**: no cloud APIs, and your diary never leaves your computer.
 
-![Mood Diary screenshot](docs/screenshot-chat.png)
-<!-- Add screenshots: docs/screenshot-chat.png and docs/screenshot-dashboard.png -->
+<img width="1896" height="940" alt="screenshot" src="https://github.com/user-attachments/assets/309247dc-69b3-42da-a08b-74955daf89bb" />
+
+<img width="1916" height="965" alt="screenshot1" src="https://github.com/user-attachments/assets/116fabd5-efba-4355-a913-61c1dca58f20" />
 
 ---
 
-## ✨ Features
+## Features
 
 - **Multimodal emotion recognition**: combines two models into one prediction:
   - 🗣️ **Tone of voice**: `emotion2vec+` analyzes the audio itself
@@ -29,7 +30,7 @@ A private, voice-enabled diary app. You talk (or type) to an AI companion about 
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
  Browser (HTML/CSS/JS)                     FastAPI backend (Python)
@@ -47,7 +48,7 @@ All models are **preloaded in background threads** at startup, and a `/api/statu
 
 ---
 
-## 🧠 Models
+## Models
 
 | Task | Model |
 |---|---|
@@ -58,7 +59,7 @@ All models are **preloaded in background threads** at startup, and a `/api/statu
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ├── backend/
@@ -75,7 +76,7 @@ All models are **preloaded in background threads** at startup, and a `/api/statu
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Prerequisites
 - Python 3.10+
@@ -114,7 +115,7 @@ HISTORY_TURNS = 6           # how many past messages the LLM sees
 
 ---
 
-## 🔌 API Overview
+## API Overview
 
 | Method | Endpoint | Description |
 |---|---|---|
@@ -129,13 +130,13 @@ HISTORY_TURNS = 6           # how many past messages the LLM sees
 
 ---
 
-## ⚠️ Limitations
+## Limitations
 
 - English only (the Whisper and text-emotion models are English-specific).
 - The emotion models detect *expressed* emotion and are not a clinical or diagnostic tool.
 - The fusion weights (60/40) are a fixed heuristic, not learned.
 
-## 🔮 Future Work
+## Future Work
 
 - Learn the fusion weights from labeled data
 - Vietnamese language support
@@ -144,12 +145,12 @@ HISTORY_TURNS = 6           # how many past messages the LLM sees
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 **AI/ML:** Ollama · faster-whisper · Hugging Face Transformers · FunASR (emotion2vec+)
 **Backend:** FastAPI · SQLite · PyAV · NumPy
 **Frontend:** Vanilla JavaScript · Chart.js · Web Speech API · MediaRecorder API
 
-## 👤 Author
+## Author
 
-**Mia Nguyen**: [GitHub](https://github.com/miangocnguyen92) · [LinkedIn](https://www.linkedin.com/in/<your-profile>)
+**Mia Nguyen**: [GitHub](https://github.com/miangocnguyen92) · [LinkedIn](https://www.linkedin.com/in/mianguyen92/)
